@@ -1,7 +1,7 @@
 {
-    "name": "parcel-typescript-pipeline",
+    "name": "react-typescript-boilerplate",
     "version": "1.0.0",
-    "description": "TypeScript build pipeline with Parcel",
+    "description": "React + TypeScript boilerplate on the shoulders of giant parcel",
     "scripts": {
         "start": "parcel serve src/index.html --dist-dir dist/dev",
         "build": "parcel build src/index.html --dist-dir dist/build",
@@ -10,6 +10,8 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "parcel": "^2.5.0"
+        "parcel": "^2.5.0",
+        "react": "^18.1.0",
+        "react-dom": "^18.1.0"
     }
 }
