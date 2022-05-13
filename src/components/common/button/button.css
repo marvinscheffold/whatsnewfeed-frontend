@@ -1,0 +1,12 @@
+button {
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    border: 0;
+    border-radius: 2rem;
+}
+
+.button-primary {
+    background-color: #725dfd;
+    color: white;
+    text-transform: uppercase;
+}
