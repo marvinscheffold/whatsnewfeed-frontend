@@ -12,7 +12,7 @@ export function JumbotronHome(props) {
                     picture or update their status.
                 </p>
                 <div className="jumbotron-home__left__button-container">
-                    <Button>Get Started</Button>
+                    <Button className={"button-primary"}>Get Started</Button>
                 </div>
             </div>
             {/* right */}

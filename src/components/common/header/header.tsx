@@ -1,11 +1,15 @@
 import { Button } from "../button/button";
 import "./header.css";
 
-export function Header() {
+export function Header(props) {
     return (
         <header>
-            <span>WhatsAppFeed</span>
-            <Button>Get Started</Button>
+            <span className="header__brand">WhatsAppFeed</span>
+            {props.showButton ? (
+                <Button className={"button-primary hidden-tablet"}>
+                    Get Started
+                </Button>
+            ) : null}
         </header>
     );
 }

@@ -1,5 +1,12 @@
 header {
+    height: 104px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 2rem 0rem;
+}
+
+.header__brand {
+    font-size: 1.333rem;
+    font-weight: 600;
 }

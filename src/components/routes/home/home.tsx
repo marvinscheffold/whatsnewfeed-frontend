@@ -10,7 +10,7 @@ export function Home() {
         <>
             <Container>
                 <div className="home">
-                    <Header />
+                    <Header showButton={true} />
                     <JumbotronHome />
                 </div>
             </Container>
