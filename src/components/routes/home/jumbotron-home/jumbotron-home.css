@@ -1,12 +1,20 @@
 .jumbotron-home {
     flex-grow: 1;
+}
+
+.jumbotron-home .container {
+    height: 100%;
+}
+
+.jumbotron-home__inner {
+    height: 100%;
     display: flex;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
     gap: 2rem;
 }
 
 @media screen and (max-width: 768px) {
-    .jumbotron-home {
+    .jumbotron-home__inner {
         flex-direction: column;
         padding-bottom: 2rem;
     }
@@ -29,4 +37,10 @@
     background-size: cover;
     background-position: center;
     border-radius: 2rem;
+}
+
+@media screen and (max-width: 448px) and (max-height: 768px) {
+    .jumbotron-home__right {
+        display: none;
+    }
 }

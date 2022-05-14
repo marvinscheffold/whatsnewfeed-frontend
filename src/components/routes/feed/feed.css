@@ -1,0 +1,31 @@
+.feed-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-auto-rows: calc(100vh - 104px);
+    grid-template-areas: "posts updates";
+    gap: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+    .feed-grid {
+        grid-template-columns: 3fr 2fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .feed-grid {
+        grid-auto-rows: unset;
+        grid-template-areas:
+            "updates updates"
+            "posts posts";
+    }
+}
+
+.posts {
+    grid-area: posts;
+    overflow: scroll;
+}
+
+.updates {
+    grid-area: updates;
+}
