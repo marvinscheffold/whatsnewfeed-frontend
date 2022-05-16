@@ -1,0 +1,8 @@
+.qrcode {
+    padding: 1.5rem 0;
+}
+
+.qrcode__skeleton {
+    width: min(100%, 400px) !important;
+    aspect-ratio: 1/1;
+}

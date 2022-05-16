@@ -1,9 +1,10 @@
 .feed-grid {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-auto-rows: calc(100vh - 104px);
-    grid-template-areas: "posts updates";
+    grid-template-columns: 4fr 2fr;
+    grid-template-areas: "left right";
+    align-items: start;
     gap: 2rem;
+    padding-top: 53.33px;
 }
 
 @media screen and (max-width: 992px) {
@@ -16,16 +17,24 @@
     .feed-grid {
         grid-auto-rows: unset;
         grid-template-areas:
-            "updates updates"
-            "posts posts";
+            "right right"
+            "left left";
+        gap: 0;
     }
 }
 
-.posts {
-    grid-area: posts;
-    overflow: scroll;
+.feed-grid__left {
+    grid-area: left;
 }
 
-.updates {
-    grid-area: updates;
+.feed-grid__right {
+    grid-area: right;
+    position: sticky;
+    top: 53.33px;
+}
+
+@media screen and (max-width: 768px) {
+    .feed-grid__right {
+        position: static;
+    }
 }

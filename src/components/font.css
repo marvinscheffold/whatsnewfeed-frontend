@@ -47,9 +47,13 @@ p {
 }
 
 .text-small {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
 }
 
 .text-very-small {
+    font-size: 0.75rem;
+}
+
+.text-very-very-small {
     font-size: 0.563rem;
 }

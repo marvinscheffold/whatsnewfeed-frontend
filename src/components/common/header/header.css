@@ -1,8 +1,29 @@
+header {
+    background-color: white;
+}
+
+.header--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 1px solid hsl(240, 22%, 94%);
+}
+
 .header__inner {
-    height: 104px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.header__inner--slim {
+    height: auto;
+    padding: 1rem 0rem;
+}
+
+.header__inner--tall {
+    height: 104px;
     padding: 2rem 0rem;
 }
 

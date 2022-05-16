@@ -1,9 +1,9 @@
 import { Container } from "../container/container";
 import "./footer.css";
 
-export function Footer() {
+export function Footer(props) {
     return (
-        <footer>
+        <footer {...props}>
             <Container>
                 <span>© 2022 WhatsAppFeed. All rights reserved</span>
             </Container>

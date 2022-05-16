@@ -2,11 +2,23 @@ import { Button } from "../button/button";
 import "./header.css";
 import { Container } from "../container/container";
 
-export function Header(props) {
+export type Props = {
+    fixed: boolean;
+    tall: boolean;
+    showButton: boolean;
+};
+
+export function Header(props: Props) {
     return (
-        <header>
+        <header className={props.fixed ? "header--fixed" : ""}>
             <Container>
-                <div className="header__inner">
+                <div
+                    className={`header__inner ${
+                        props.tall
+                            ? "header__inner--tall"
+                            : "header__inner--slim"
+                    }`}
+                >
                     <span className="header__brand">WhatsAppFeed</span>
                     {props.showButton ? (
                         <Button className={"button-primary hidden-tablet"}>

@@ -7,7 +7,7 @@ import { Footer } from "../../common/footer/footer";
 export function Home() {
     return (
         <div className="home">
-            <Header showButton={true} />
+            <Header showButton={false} fixed={false} tall={true} />
 
             <JumbotronHome />
 
