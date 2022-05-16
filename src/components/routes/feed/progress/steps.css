@@ -1,9 +1,14 @@
 .ant-steps-item-finish .ant-steps-item-icon > .ant-steps-icon {
-    color: #725dfd;
+    color: var(--color-primary);
 }
 
 .ant-steps-item-finish .ant-steps-item-icon {
-    border-color: #725dfd;
+    border-color: var(--color-primary);
+}
+
+.ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-icon {
+    background: none;
+    border-color: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -15,11 +20,11 @@
 .ant-steps-item-custom.ant-steps-item-process
     .ant-steps-item-icon
     > .ant-steps-icon {
-    color: #725dfd;
+    color: var(--color-primary);
 }
 
 .ant-steps-item-finish
     > .ant-steps-item-container
     > .ant-steps-item-tail:after {
-    background-color: #725dfd;
+    background-color: var(--color-primary);
 }

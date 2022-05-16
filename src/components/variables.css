@@ -1,0 +1,5 @@
+:root {
+    --color-primary: #725dfd;
+    --color-grey-light: hsl(0, 0%, 92%);
+    --color-grey-middle: hsla(0, 0%, 0%, 0.451);
+}

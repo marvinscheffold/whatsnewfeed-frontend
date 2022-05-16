@@ -2,7 +2,6 @@
 import "./qrcode.css";
 import QRCode from "react-qr-code";
 import Skeleton from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
 import { useWindowWidth } from "@react-hook/window-size";
 
 export interface Props {

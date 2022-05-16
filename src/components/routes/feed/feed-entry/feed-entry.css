@@ -1,21 +1,21 @@
-.post {
+.feed-entry {
     width: 100%;
     padding: 1rem 0;
-    border-bottom: 1px solid hsl(240, 23%, 94%);
+    border-bottom: 1px solid var(--color-grey-light);
     display: flex;
     gap: 1rem;
 }
 
-.post .text-small {
-    color: hsla(0, 0%, 0%, 0.451);
+.feed-entry .text-small {
+    color: var(--color-grey-middle);
 }
 
-.post:last-child {
+.feed-entry:last-child {
     border-bottom: none;
     padding-bottom: 2rem;
 }
 
-.post__avatar {
+.feed-entry__avatar {
     min-width: 3.5rem;
     width: 3.5rem;
     min-height: 3.5rem;
@@ -23,11 +23,11 @@
     border-radius: 50%;
 }
 
-.post__contact-name {
+.feed-entry__contact-name {
     font-weight: 600;
 }
 
-.post header {
+.feed-entry header {
     height: 3.5rem;
     display: flex;
     flex-direction: column;
@@ -35,15 +35,22 @@
     gap: 0.375rem;
 }
 
-.post__right {
+.feed-entry__right {
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     gap: 0.25rem;
 }
 
-.post__img {
+.feed-entry__img {
     border-radius: 0.5rem;
     object-fit: cover;
     width: 400px;
     max-width: 100%;
+}
+
+.feed-entry__img--skeleton {
+    width: clamp(400px, 400px, 100%) !important;
+    border-radius: 0.5rem !important;
+    aspect-ratio: 1 / 1;
 }

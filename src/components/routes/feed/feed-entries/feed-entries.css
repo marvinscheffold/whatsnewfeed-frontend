@@ -1,9 +1,9 @@
-.posts {
+.feed-entries {
     padding-top: 0.5rem;
 }
 
 @media screen and (max-width: 768px) {
-    .posts {
+    .feed-entries {
         padding-top: 0;
     }
 }
