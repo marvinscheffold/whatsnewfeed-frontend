@@ -7,18 +7,30 @@ const { Step } = Steps;
 
 export interface ProgressProps {
     currentStep: number;
-    currentDescription: string | undefined;
+    updateStepDescription: string | null;
 }
 
-export function Progress({ currentStep, currentDescription }: ProgressProps) {
+export function Progress({
+    currentStep,
+    updateStepDescription,
+}: ProgressProps) {
     const stepsData = [
-        { title: "Start", description: "Generating your QR-Code" },
-        { title: "Login", description: "Waiting for QR-Code scan" },
+        {
+            title: "Start",
+            description: "Generating your QR-Code",
+        },
+        {
+            title: "Login",
+            description: "Please scan the QR-Code",
+        },
         {
             title: "Update",
-            description: currentDescription || "Comparing profile data",
+            description: updateStepDescription || "Comparing profile data",
         },
-        { title: "Finish", description: "You are up to date" },
+        {
+            title: "Finish",
+            description: "You are up to date",
+        },
     ];
 
     return (

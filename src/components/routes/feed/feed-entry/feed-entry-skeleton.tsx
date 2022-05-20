@@ -23,7 +23,7 @@ export function FeedEntrySkeleton({ type }: Props) {
                 ) : null}
                 {type === "text" ? (
                     <span>
-                        <Skeleton width={180} />
+                        <Skeleton width={280} />
                     </span>
                 ) : null}
             </div>

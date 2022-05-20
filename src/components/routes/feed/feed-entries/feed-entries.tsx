@@ -1,24 +1,25 @@
 import "./feed-entries.css";
-import { FeedEntry, FeedEntryData } from "../feed-entry/feed-entry";
+import { FeedEntry } from "../feed-entry/feed-entry";
 import { FeedEntrySkeleton } from "../feed-entry/feed-entry-skeleton";
+import { FeedEntryData } from "../../../../utils/types";
 
-export function FeedEntries(props: { feedEntries: FeedEntryData[] }) {
+export function FeedEntries(props: {
+    feedEntries: FeedEntryData[];
+    showSkeleton: boolean;
+}) {
     const feedEntries = props.feedEntries;
     return (
         <section className="posts">
-            {feedEntries.length === 0 ? (
+            {feedEntries.map((feedEntry) => {
+                return <FeedEntry feedEntry={feedEntry} />;
+            })}
+            {props.showSkeleton ? (
                 <>
                     {" "}
-                    <FeedEntrySkeleton type="text" />
                     <FeedEntrySkeleton type="image" />
-                    <FeedEntrySkeleton type="text" />
-                    <FeedEntrySkeleton type="text" />
+                    <FeedEntrySkeleton type="image" />
                 </>
-            ) : (
-                feedEntries.map((feedEntry, index) => {
-                    return <FeedEntry feedEntry={feedEntry} />;
-                })
-            )}
+            ) : null}
         </section>
     );
 }

@@ -1,8 +1,9 @@
 .qrcode {
     padding: 1.5rem 0;
+    animation: var(--animation-fade-in);
 }
 
 .qrcode__skeleton {
-    width: min(100%, 400px) !important;
+    width: min(100%, calc(400px + 4rem)) !important;
     aspect-ratio: 1/1;
 }

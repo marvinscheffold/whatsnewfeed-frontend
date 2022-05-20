@@ -2,10 +2,12 @@ import "./feed-entry.css";
 import { Image } from "../../../common/image/image";
 import { FeedEntryData } from "../../../../utils/types";
 
-
-
 export function FeedEntry(props: { feedEntry: FeedEntryData }) {
     const feedEntry = props.feedEntry;
+    let infoText = "";
+    if (feedEntry.type === "ABOUT_INFO_CHANGE") infoText = "Has a new Status";
+    if (feedEntry.type === "PROFILE_PICTURE_CHANGE")
+        infoText = "Has a new Picture";
     return (
         <article className="feed-entry">
             <Image
@@ -19,7 +21,7 @@ export function FeedEntry(props: { feedEntry: FeedEntryData }) {
                     <span className="feed-entry__contact-name">
                         {feedEntry.creator}
                     </span>
-                    <span className="text-small">{feedEntry.info}</span>
+                    <span className="text-small">{infoText}</span>
                 </header>
                 {feedEntry.imgSrc ? (
                     <Image
