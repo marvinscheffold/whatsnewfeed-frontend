@@ -15,11 +15,11 @@ import { SERVER_URL } from "../../../utils/constants";
 export function Feed() {
     const [state, dispatch] = useReducer<FeedState>(feedReducer, initialState);
     useEffect(() => {
-        //const socket = io(SERVER_URL);
-        //connectSocketAndReducer(socket, dispatch);
+        const socket = io(SERVER_URL);
+        connectSocketAndReducer(socket, dispatch);
 
         return () => {
-            //socket.disconnect();
+            socket.disconnect();
         };
     }, []);
 
@@ -35,7 +35,7 @@ export function Feed() {
     console.log(state);
 
     return (
-        <>
+        <div className="feed">
             <Header showButton={false} fixed={true} tall={false} />
             <Container>
                 <div className="feed-grid">
@@ -58,6 +58,6 @@ export function Feed() {
                 </div>
             </Container>
             <Footer className={"visible-tablet"} />
-        </>
+        </div>
     );
 }

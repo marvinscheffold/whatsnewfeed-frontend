@@ -15,11 +15,11 @@ export interface FeedReducerAction {
 }
 
 export const initialState: FeedState = {
-    step: 6,
+    step: 0,
     updateStepDescription: null,
     feedEntries: [],
     qrCode: null,
-    showQRCode: false,
+    showQRCode: true,
     showSkeleton: false,
 };
 
