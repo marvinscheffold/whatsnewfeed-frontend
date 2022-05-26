@@ -32,8 +32,6 @@ export function Feed() {
         showSkeleton,
     } = state;
 
-    console.log(state);
-
     return (
         <div className="feed">
             <Header showButton={false} fixed={true} tall={false} />

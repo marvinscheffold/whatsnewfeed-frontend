@@ -20,7 +20,7 @@ export const initialState: FeedState = {
     feedEntries: [],
     qrCode: null,
     showQRCode: true,
-    showSkeleton: false,
+    showSkeleton: true,
 };
 
 export type FeedReducer = (
@@ -48,14 +48,13 @@ export function feedReducer(
             return {
                 ...state,
                 step: 2,
+                showSkeleton: true,
                 showQRCode: false,
             };
         case ACTION_TYPES.RECEIVED_FEED_ENTRIES:
             // Attach feed entries to the front
             return {
                 ...state,
-                step: 2,
-                showQRCode: false,
                 feedEntries: [...state.feedEntries, ...action.payload],
             };
         case ACTION_TYPES.RECEIVED_CURRENT_UPDATING_CONTACT:
