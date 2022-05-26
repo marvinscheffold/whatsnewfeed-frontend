@@ -2,6 +2,7 @@ import { Button } from "../button/button";
 import "./header.css";
 import { Container } from "../container/container";
 import { Link } from "react-router-dom";
+const icon = new URL("./../../../img/icon.png", import.meta.url);
 
 export type Props = {
     fixed: boolean;
@@ -20,8 +21,9 @@ export function Header(props: Props) {
                             : "header__inner--slim"
                     }`}
                 >
-                    <Link to="/">
-                        <span className="header__brand">WhatsNewFeed</span>
+                    <Link to="/" className="header__brand">
+                        <img className="header__icon" src={icon}></img>
+                        <span>WhatsNewFeed</span>
                     </Link>
 
                     {props.showButton ? (

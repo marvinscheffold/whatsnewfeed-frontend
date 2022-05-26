@@ -27,8 +27,15 @@ header {
     padding: 2rem 0rem;
 }
 
+.header__icon {
+    height: 2rem;
+}
+
 .header__brand {
     font-size: 1.333rem;
     font-weight: 600;
     color: var(--color-text);
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
 }
