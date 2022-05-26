@@ -13,7 +13,7 @@
     gap: 2rem;
 }
 
-@media screen and (max-width: 996px) {
+@media screen and (max-width: 992px) {
     .jumbotron-home__inner {
         flex-direction: column;
         padding-bottom: 2rem;
@@ -33,14 +33,17 @@
 
 .jumbotron-home__right {
     flex-basis: 50%;
-    background-image: url("https://images.unsplash.com/photo-1543807535-eceef0bc6599?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80");
-    background-size: cover;
-    background-position: center;
-    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 448px) and (max-height: 768px) {
     .jumbotron-home__right {
         display: none;
     }
+}
+
+.jumbotron-home__right img {
+    width: 80%;
 }

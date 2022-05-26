@@ -2,6 +2,7 @@ import "./jumbotron-home.css";
 import { Link } from "react-router-dom";
 import { Button } from "../../../common/button/button";
 import { Container } from "../../../common/container/container";
+const illustration = new URL("./phone.svg", import.meta.url);
 
 export function JumbotronHome(props) {
     return (
@@ -24,7 +25,9 @@ export function JumbotronHome(props) {
                         </div>
                     </div>
                     {/* right */}
-                    <div className="jumbotron-home__right"></div>
+                    <div className="jumbotron-home__right">
+                        <img src={illustration}></img>
+                    </div>
                 </div>
             </Container>
         </section>

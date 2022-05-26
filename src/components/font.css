@@ -42,7 +42,7 @@ h6 {
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.25rem;
     line-height: 1.5;
 }
 
@@ -60,4 +60,26 @@ p {
 
 .text-bold {
     font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 3.157rem;
+    }
+
+    h2 {
+        font-size: 2.369rem;
+    }
+
+    h3 {
+        font-size: 1.777rem;
+    }
+
+    h4 {
+        font-size: 1.333rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
 }

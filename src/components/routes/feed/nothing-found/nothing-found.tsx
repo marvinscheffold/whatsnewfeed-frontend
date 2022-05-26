@@ -1,5 +1,5 @@
 import "./nothing-found.css";
-const illustration = new URL("./undraw_empty_re_opql.svg", import.meta.url);
+const illustration = new URL("./empty-box.svg", import.meta.url);
 
 export function NothingFound() {
     return (

@@ -1,7 +1,19 @@
 .container {
     height: auto;
     width: 100%;
-    max-width: 960px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 2rem;
+}
+
+@media (max-width: 1280px) {
+    .container {
+        max-width: 992px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 768px;
+    }
 }
