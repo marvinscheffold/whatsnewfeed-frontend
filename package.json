@@ -7,6 +7,11 @@
         "build": "parcel build src/index.html --dist-dir dist/build",
         "serve:build": "npx http-server dist/build"
     },
+    "staticFiles": {
+        "staticPath": [
+            "static"
+        ]
+    },
     "author": "",
     "license": "ISC",
     "dependencies": {
@@ -25,6 +30,7 @@
     "devDependencies": {
         "@parcel/transformer-less": "^2.5.0",
         "buffer": "^6.0.3",
+        "parcel-plugin-static-files-copy": "^2.6.0",
         "process": "^0.11.10"
     }
 }
