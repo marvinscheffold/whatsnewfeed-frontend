@@ -5,7 +5,7 @@ export function Footer(props) {
     return (
         <footer {...props}>
             <Container>
-                <span>© 2022 WhatsAppFeed. All rights reserved</span>
+                <span>© 2022 WhatsNewFeed. All rights reserved</span>
             </Container>
         </footer>
     );

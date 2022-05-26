@@ -1,4 +1,5 @@
 import "./jumbotron-home.css";
+import { Link } from "react-router-dom";
 import { Button } from "../../../common/button/button";
 import { Container } from "../../../common/container/container";
 
@@ -11,13 +12,15 @@ export function JumbotronHome(props) {
                     <div className="jumbotron-home__left">
                         <h1>Find out all about your Friends.</h1>
                         <p>
-                            WhatsAppFeed shows you when contacts change their
+                            WhatsNewFeed shows you when contacts change their
                             profile picture or update their status.
                         </p>
                         <div className="jumbotron-home__left__button-container">
-                            <Button className={"button-primary"}>
-                                Get Started
-                            </Button>
+                            <Link to="/feed">
+                                <Button className={"button-primary"}>
+                                    Get Started
+                                </Button>
+                            </Link>
                         </div>
                     </div>
                     {/* right */}

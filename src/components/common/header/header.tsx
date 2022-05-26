@@ -1,6 +1,7 @@
 import { Button } from "../button/button";
 import "./header.css";
 import { Container } from "../container/container";
+import { Link } from "react-router-dom";
 
 export type Props = {
     fixed: boolean;
@@ -19,11 +20,16 @@ export function Header(props: Props) {
                             : "header__inner--slim"
                     }`}
                 >
-                    <span className="header__brand">WhatsAppFeed</span>
+                    <Link to="/">
+                        <span className="header__brand">WhatsNewFeed</span>
+                    </Link>
+
                     {props.showButton ? (
-                        <Button className={"button-primary hidden-tablet"}>
-                            Get Started
-                        </Button>
+                        <Link to="/feed">
+                            <Button className={"button-primary"}>
+                                Get Started
+                            </Button>
+                        </Link>
                     ) : null}
                 </div>
             </Container>

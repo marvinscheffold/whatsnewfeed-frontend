@@ -30,4 +30,5 @@ header {
 .header__brand {
     font-size: 1.333rem;
     font-weight: 600;
+    color: var(--color-text);
 }

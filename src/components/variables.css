@@ -1,6 +1,7 @@
 :root {
     --color-primary: #725dfd;
     /* --color-primary: #41c452; */
+    --color-text: #000000d9;
     --color-grey-very-light: hsl(0, 0%, 98%);
     --color-grey-light: hsl(0, 0%, 92%);
     --color-grey-middle: hsla(0, 0%, 0%, 0.451);
