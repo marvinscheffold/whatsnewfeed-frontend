@@ -39,3 +39,7 @@ header {
     align-items: center;
     gap: 0.25rem;
 }
+
+.header__brand:hover {
+    color: var(--color-text);
+}
