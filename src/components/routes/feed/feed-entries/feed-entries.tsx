@@ -2,6 +2,7 @@ import "./feed-entries.css";
 import { FeedEntry } from "../feed-entry/feed-entry";
 import { FeedEntrySkeleton } from "../feed-entry/feed-entry-skeleton";
 import { FeedEntryData } from "../../../../utils/types";
+import { NothingFound } from "../nothing-found/nothing-found";
 
 export function FeedEntries(props: {
     feedEntries: FeedEntryData[];
@@ -9,7 +10,7 @@ export function FeedEntries(props: {
 }) {
     const feedEntries = props.feedEntries;
     return (
-        <section className="posts">
+        <section className="feed-entries">
             {feedEntries.map((feedEntry) => {
                 return <FeedEntry feedEntry={feedEntry} />;
             })}
@@ -19,6 +20,9 @@ export function FeedEntries(props: {
                     <FeedEntrySkeleton type="image" />
                     <FeedEntrySkeleton type="image" />
                 </>
+            ) : null}
+            {!props.showSkeleton && feedEntries.length === 0 ? (
+                <NothingFound />
             ) : null}
         </section>
     );

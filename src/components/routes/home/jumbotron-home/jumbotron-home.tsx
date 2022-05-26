@@ -13,7 +13,7 @@ export function JumbotronHome(props) {
                         <h1>Find out all about your Friends.</h1>
                         <p>
                             WhatsNewFeed shows you when contacts change their
-                            profile picture or update their status.
+                            profile picture or update their status on WhatsApp.
                         </p>
                         <div className="jumbotron-home__left__button-container">
                             <Link to="/feed">

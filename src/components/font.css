@@ -57,3 +57,7 @@ p {
 .text-very-very-small {
     font-size: 0.563rem;
 }
+
+.text-bold {
+    font-weight: 500;
+}

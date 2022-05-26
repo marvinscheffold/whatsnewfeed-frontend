@@ -1,0 +1,15 @@
+.nothing-found {
+    width: 100%;
+    height: auto;
+    padding: 1.5rem 0;
+}
+
+.nothing-found img {
+    width: min(100%, calc(400px + 4rem));
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.nothing-found p {
+    text-align: center;
+}
