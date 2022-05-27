@@ -20,7 +20,7 @@ export function connectSocketAndReducer(socket, dispatch: FeedReducerDispatch) {
         console.log("currentUpdatingUser", currentUpdatingContact);
         dispatch({
             type: ACTION_TYPES.RECEIVED_CURRENT_UPDATING_CONTACT,
-            payload: `Comparing: ${currentUpdatingContact}`,
+            payload: `Updating: ${currentUpdatingContact}`,
         });
     });
 

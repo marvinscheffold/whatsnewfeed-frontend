@@ -17,15 +17,15 @@ export function Progress({
     const stepsData = [
         {
             title: "Start",
-            description: "Generating your QR-Code",
+            description: "Generating your QR code",
         },
         {
             title: "Login",
-            description: "Please scan the QR-Code",
+            description: "Scan the QR code to continue",
         },
         {
             title: "Update",
-            description: updateStepDescription || "Comparing profile data",
+            description: updateStepDescription || "Looking for updates",
         },
         {
             title: "Finish",
