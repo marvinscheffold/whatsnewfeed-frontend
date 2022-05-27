@@ -15,11 +15,11 @@ import { SERVER_URL } from "../../../utils/constants";
 export function Feed() {
     const [state, dispatch] = useReducer<FeedState>(feedReducer, initialState);
     useEffect(() => {
-        //const socket = io(SERVER_URL);
-        //connectSocketAndReducer(socket, dispatch);
+        const socket = io(SERVER_URL);
+        connectSocketAndReducer(socket, dispatch);
 
         return () => {
-            //socket.disconnect();
+            socket.disconnect();
         };
     }, []);
 
