@@ -20,6 +20,15 @@ export function QrCode({ value }: Props) {
             ) : (
                 <QRCode value={value} size={qrSize} />
             )}
+            <p>
+                <ol>
+                    <li>1. Open WhatsApp on your phone.</li>
+                    <li>2. Tap menu or settings and select linked devices.</li>
+                    <li>
+                        3. Point your phone at this screen to scan the QR code.
+                    </li>
+                </ol>
+            </p>
         </section>
     );
 }
