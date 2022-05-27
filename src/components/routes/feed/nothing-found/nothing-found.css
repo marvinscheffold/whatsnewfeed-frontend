@@ -5,11 +5,6 @@
 }
 
 .nothing-found img {
-    width: min(100%, calc(400px + 4rem));
-    width: 100%;
+    width: min(100%, calc(500px + 4rem));
     margin-bottom: 0.5rem;
-}
-
-.nothing-found p {
-    text-align: center;
 }

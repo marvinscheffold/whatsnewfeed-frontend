@@ -52,7 +52,7 @@ export function feedReducer(
                 showQRCode: false,
             };
         case ACTION_TYPES.RECEIVED_FEED_ENTRIES:
-            // Attach feed entries to the front
+            // Attach feed entries to the back
             return {
                 ...state,
                 feedEntries: [...state.feedEntries, ...action.payload],

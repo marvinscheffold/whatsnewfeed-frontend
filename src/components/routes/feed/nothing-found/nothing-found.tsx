@@ -6,9 +6,10 @@ export function NothingFound() {
         <div className="nothing-found">
             <img src={illustration}></img>
             <p>
-                <span className="text-bold">We couldn´t find any updates.</span>
+                We couldn´t find any updates.
                 <br></br>
-                Ask a friend to change his profile picture and then try again!
+                When a contact changes their picture or status you will see it
+                here.
             </p>
         </div>
     );
