@@ -12,7 +12,7 @@
     grid-template-areas: "left right";
     align-items: start;
     gap: 2rem;
-    padding-top: 53.33px;
+    padding-top: 65px;
 }
 
 @media screen and (max-width: 992px) {
@@ -38,7 +38,7 @@
 .feed-grid__right {
     grid-area: right;
     position: sticky;
-    top: 53.33px;
+    top: 65px;
 }
 
 @media screen and (max-width: 768px) {
