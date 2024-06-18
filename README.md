@@ -2,11 +2,11 @@
 
 <img src="./img/screenshot-hp.png" alt="WhatsNewFeed" width="500"/>
 
-[WhatsNewFeed](https://whatsnewfeed.com/) shows you when contacts change their profile picture or update their status on WhatsApp.
+[WhatsNewFeed](https://whatsnewfeed.netlify.app/) shows you when contacts change their profile picture or update their status on WhatsApp.
 
 Designed with 💜 in Berlin.<br>
 Built with: TypeScript, Parcel, React, Socket.io<br>
-Try it out at [https://whatsnewfeed.com/](https://whatsnewfeed.com/)<br>
+Try it out at [WhatsNewFeed](https://whatsnewfeed.netlify.app/)<br>
 
 ## Screen Redording
 
